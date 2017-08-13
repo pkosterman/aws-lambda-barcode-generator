@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# set -e
-# set -x
+set -e
 
 # clean the build directory
 echo "Cleaning build folder"
