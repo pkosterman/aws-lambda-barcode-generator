@@ -21,18 +21,6 @@ cd build
 sed -e "/const exeName = /s/.*/const exeName = 'main';/g" index.js > index.tmp
 sed -e "s/done(output, null);/done(output.errorMessage, null);/g" index.tmp > index.js
 zip -r lambda.zip main index.js
-echo "Uploading to AWS"
-
-#TODO upload lambda.zip as lambda function
-#aws lambda upload-function \
-# --region $LAMBDA
-# --function-name $LAMBDA_FUNCTION \
-# --function-zip fileb://lambda.zip \
-# --role $LAMBDA_ARN \
-# --mode event \
-# --handler handler \
-# --timeout 30 \
-# --runtime nodejs
 
 echo "Cleaning up"
 rm index.* main

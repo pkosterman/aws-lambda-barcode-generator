@@ -29,7 +29,7 @@ The Node.js wrapper used in this project is inspired by:
 * <a href="https://github.com/jasonmoo/lambda_proc">lambda_proc</a>
 * <a href="http://wiki.tcl.tk/44464">Amazon AWS Lambda &amp; Tcl</a>
 
-## Full Demo & Instruction
+## Full Demo & Instructions
 
 Click <a href="https://blog.passkit.com/write-a-scalable-bar-code-generator-with-golang-aws-lambda">here</a> for a detailed article on how to set this up with AWS API Gateway and Route 53.
 
