@@ -7,7 +7,7 @@ This is a sample project to demonstrate usage of Go for AWS Lambda.
 
 Currently AWS Lambda natively supports Java, Node.js, Python, and C#.
 
-This project uses a Go Node.js wrapper to build a Go Lambda function that generates a and returns a barcode when triggered by AWS API Gateway. The barcode is returned as a base64 encoded PNG image string.
+This project uses a Go Node.js wrapper to build a Go Lambda function that generates and returns a barcode when triggered by AWS API Gateway. The barcode is returned as a base64 encoded PNG image string.
 
 The Node.js wrapper keeps a Go process around to handle multiple invocations. The first time the function is run it will take a bit longer, but after that it greatly increases performance.
 
